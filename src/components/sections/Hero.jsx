@@ -10,7 +10,7 @@ import { TrendingUp } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-screen lg:min-h-screen pt-16 md:pt-20 pb-4 md:pb-8 overflow-auto lg:overflow-hidden">
+    <section className="relative w-full pt-16 md:pt-20 pb-4 md:pb-8 overflow-auto ">
       {/* Background Container */}
       <div className="absolute inset-0 md:inset-x-4 lg:inset-x-6 md:top-4 lg:top-6 md:bottom-auto md:h-[85vh] lg:h-[83vh] xl:h-[80vh] 2xl:h-[78vh]">
         <div className="relative w-full h-full">

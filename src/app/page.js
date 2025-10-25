@@ -1,10 +1,11 @@
+import FeaturesSection from "@/components/sections/Feature";
 import Hero from "../components/sections/Hero";
-import Image from "next/image";
 
 export default function Home() {
   return (
    <div>
     <Hero />
+    <FeaturesSection />
    </div>
   );
 }
