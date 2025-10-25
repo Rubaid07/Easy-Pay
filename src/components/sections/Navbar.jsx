@@ -1,16 +1,17 @@
 import Image from 'next/image';
 import React from 'react';
-import logo from '../../../../public/logo.png';
+import logo from '../../../public/logo.png';
 import Button from '../ui/Button';
+import Link from 'next/link';
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center py-[36.5px] px-[111px] w-full">
+        <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-[60.5px] px-[135px] ">
             {/* Logo */}
-            <div className="flex items-center text-2xl text-gray-800">
+            <Link href="/" className="flex items-center text-2xl text-gray-800">
                 <Image src={logo} alt="Easy Pay Logo" width={40} height={40} />
                 <h1 className='font-bold'>Easy Pay</h1>
-            </div>
+            </Link>
 
             {/* Navigation Button */}
             <div className="flex items-center space-x-12">

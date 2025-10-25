@@ -1,6 +1,6 @@
 import { Urbanist } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/sections/Navbar";
+import Navbar from "../components/sections/Navbar";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
