@@ -15,9 +15,9 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 lg:py-[60.5px] px-6 sm:px-8 lg:px-12 xl:px-28 bg-white/30 backdrop-blur-sm lg:backdrop-blur-none lg:bg-transparent">
+            <nav className="fixed top-0 left-0 right-0 z-30 flex justify-between items-center py-4 lg:py-[60.5px] px-6 sm:px-8 lg:px-12 xl:px-32 bg-white/30 backdrop-blur-sm lg:backdrop-blur-none lg:bg-transparent">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 text-gray-800 z-60">
+                <Link href="/" className="flex items-center text-gray-800 z-60">
                     <Image 
                         src={logo} 
                         alt="Easy Pay Logo"
@@ -59,7 +59,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu Button */}
                 <button 
-                    className="lg:hidden flex items-center justify-center w-10 h-10 text-gray-600 hover:text-gray-900 transition duration-150"
+                    className="lg:hidden flex items-center justify-center w-10 h-10 text-gray-600 hover:text-gray-900 z-50 transition duration-150"
                     onClick={toggleMenu}
                     aria-label="Toggle menu"
                 >
@@ -81,7 +81,15 @@ const Navbar = () => {
                     absolute top-0 right-0 w-80 max-w-full h-full bg-white shadow-xl transform transition-transform duration-300
                     ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
                 `}>
-                        {/* Mobile Navigation Links */}
+                    <button 
+                        className="absolute top-6 right-6 flex items-center justify-center w-10 h-10 text-gray-600 hover:text-gray-900 z-50 transition duration-150"
+                        onClick={toggleMenu}
+                        aria-label="Close menu"
+                    >
+                        <X size={24} />
+                    </button>
+                    
+                    {/* Mobile Navigation Links */}
                     <div className="flex flex-col h-full pt-20 pb-8 px-6">
                         <ul className="flex flex-col space-y-6">
                             <li>
