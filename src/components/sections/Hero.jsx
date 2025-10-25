@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import heroImage from "../../../public/hero-image.png";
-import manImage from "../../../public/man.png";
-import appstore from "../../../public/appstore.png";
-import googleplay from "../../../public/googleplay.png";
-import underline from "../../../public/underline.png";
+import heroImage from "../../../public/hero/hero-image.png";
+import manImage from "../../../public/hero/man.png";
+import appstore from "../../../public/hero/appstore.png";
+import googleplay from "../../../public/hero/googleplay.png";
+import underline from "../../../public/hero/underline.png";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"; 
 import { TrendingUp } from "lucide-react";
 
@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className="relative w-full pt-16 md:pt-20 pb-4 md:pb-8 overflow-auto ">
       {/* Background Container */}
-      <div className="absolute inset-0 md:inset-x-4 lg:inset-x-6 md:top-4 lg:top-6 md:bottom-auto md:h-[85vh] lg:h-[83vh] xl:h-[80vh] 2xl:h-[78vh]">
+      <div className="absolute inset-0 md:inset-x-4 lg:inset-x-6 md:top-4 lg:top-6 md:bottom-auto md:h-[110vh] lg:h-[83vh] xl:h-[80vh] 2xl:h-[78vh]">
         <div className="relative w-full h-full">
           <Image
             src={heroImage}
@@ -27,7 +27,7 @@ const Hero = () => {
 
       {/* Content Container */}
       <div className="relative z-10 min-h-[75vh] sm:min-h-[80vh] md:min-h-[75vh] lg:h-[80vh] xl:h-[75vh] flex items-end">
-        <div className="w-full flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 xl:px-32 pb-4 md:pb-6 lg:pb-8 gap-6 md:gap-8 lg:gap-12 xl:gap-16 mt-10">
+        <div className="md:w-10/12 mx-auto flex flex-col lg:flex-row items-center justify-between px-4 pb-4 md:pb-6 lg:pb-8 gap-6 md:gap-8 lg:gap-12 xl:gap-16 mt-10">
           
           {/* Left Content */}
           <div className="flex-1 w-full lg:max-w-xl text-center lg:text-left space-y-2 mb-8 sm:mb-10 md:mb-12 lg:mb-16">
@@ -94,7 +94,7 @@ const Hero = () => {
               </div>
 
               {/* Active Users Card */}
-              <div className="absolute top-2 sm:top-4 md:top-6 lg:top-12 xl:top-16 2xl:top-60 right-1 sm:right-2 md:right-4 lg:right-8 xl:right-10 bg-white shadow-md sm:shadow-lg rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 flex items-center gap-2 sm:gap-3 w-[150px] sm:w-[180px] md:w-[200px] lg:w-[210px] xl:w-[220px] max-w-[220px]">
+              <div className="absolute top-2 sm:top-4 md:top-6 lg:top-12 xl:top-40 2xl:top-62 right-1 sm:right-2 md:right-4 lg:right-2 xl:right-10 bg-white shadow-md sm:shadow-lg rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 flex items-center gap-2 sm:gap-3 w-[150px] sm:w-[180px] md:w-[200px] lg:w-[210px] xl:w-[220px] max-w-[220px]">
                 <div className="flex -space-x-1 sm:-space-x-2">
                   <Avatar className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-9 xl:w-9 border-2 border-white">
                     <AvatarImage src="https://randomuser.me/api/portraits/men/44.jpg" alt="User 1" />

@@ -49,90 +49,95 @@ const Navbar = () => {
     return (
         <>
             <nav className={`
-                fixed top-0 left-0 right-0 z-30 flex justify-between items-center px-6 sm:px-8 lg:px-12 xl:px-32 
-                transition-all duration-300 ease-in-out
+                fixed top-0 left-0 right-0 z-30 transition-all duration-300 ease-in-out
                 ${isVisible ? 'translate-y-0' : '-translate-y-full'}
                 ${hasScrolled 
                     ? 'bg-white/80 backdrop-blur-md shadow-sm py-3 lg:py-4' 
                     : 'bg-transparent backdrop-blur-none py-4 lg:py-[60.5px]'
                 }
             `}>
-                {/* Logo */}
-                <Link href="/" className="flex items-center text-gray-800 z-60">
-                    <Image 
-                        src={logo} 
-                        alt="Easy Pay Logo"
-                    />
-                    <h1 className={`font-bold text-xl lg:text-2xl transition-all duration-300 ${
-                        hasScrolled ? 'text-gray-900' : 'text-gray-800'
-                    }`}>
-                        Easy Pay
-                    </h1>
-                </Link>
+                {/* Content Container */}
+                <div className="flex justify-between items-center px-4 md:w-10/12 mx-auto">
+                    {/* Logo */}
+                    <Link href="/" className="flex items-center text-gray-800 z-60">
+                        <Image 
+                            src={logo} 
+                            alt="Easy Pay Logo"
+                            width={40}
+                            height={40}
+                            className="w-8 h-8 lg:w-10 lg:h-10"
+                        />
+                        <h1 className={`font-bold text-xl lg:text-2xl transition-all duration-300 ml-2 ${
+                            hasScrolled ? 'text-gray-900' : 'text-gray-800'
+                        }`}>
+                            Easy Pay
+                        </h1>
+                    </Link>
 
-                {/* Desktop Navigation */}
-                <div className="hidden lg:flex items-center gap-12">
-                    <ul className="flex gap-10">
-                        <li>
-                            <a href="#" className={`font-medium text-base transition-all duration-300 ${
-                                hasScrolled 
-                                    ? 'text-gray-700 hover:text-gray-900' 
-                                    : 'text-gray-600 hover:text-gray-800'
-                            }`}>
-                                Features
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className={`font-medium text-base transition-all duration-300 ${
-                                hasScrolled 
-                                    ? 'text-gray-700 hover:text-gray-900' 
-                                    : 'text-gray-600 hover:text-gray-800'
-                            }`}>
-                                Pricing
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className={`font-medium text-base transition-all duration-300 ${
-                                hasScrolled 
-                                    ? 'text-gray-700 hover:text-gray-900' 
-                                    : 'text-gray-600 hover:text-gray-800'
-                            }`}>
-                                Security
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className={`font-medium text-base transition-all duration-300 ${
-                                hasScrolled 
-                                    ? 'text-gray-700 hover:text-gray-900' 
-                                    : 'text-gray-600 hover:text-gray-800'
-                            }`}>
-                                Benefits
-                            </a>
-                        </li>
-                    </ul>
+                    {/* Desktop Navigation */}
+                    <div className="hidden lg:flex items-center gap-12">
+                        <ul className="flex gap-8 xl:gap-10">
+                            <li>
+                                <a href="#" className={`font-medium text-base transition-all duration-300 ${
+                                    hasScrolled 
+                                        ? 'text-gray-700 hover:text-gray-900' 
+                                        : 'text-gray-600 hover:text-gray-800'
+                                }`}>
+                                    Features
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={`font-medium text-base transition-all duration-300 ${
+                                    hasScrolled 
+                                        ? 'text-gray-700 hover:text-gray-900' 
+                                        : 'text-gray-600 hover:text-gray-800'
+                                }`}>
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={`font-medium text-base transition-all duration-300 ${
+                                    hasScrolled 
+                                        ? 'text-gray-700 hover:text-gray-900' 
+                                        : 'text-gray-600 hover:text-gray-800'
+                                }`}>
+                                    Security
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={`font-medium text-base transition-all duration-300 ${
+                                    hasScrolled 
+                                        ? 'text-gray-700 hover:text-gray-900' 
+                                        : 'text-gray-600 hover:text-gray-800'
+                                }`}>
+                                    Benefits
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="hidden lg:block">
+                        <Button variant="filled">
+                            Contact Us
+                        </Button>
+                    </div>
+
+                    {/* Mobile Menu Button */}
+                    <button 
+                        className={`lg:hidden flex items-center justify-center w-10 h-10 z-50 transition-all duration-300 ${
+                            hasScrolled 
+                                ? 'text-gray-600 hover:text-gray-900' 
+                                : 'text-gray-500 hover:text-gray-700'
+                        }`}
+                        onClick={toggleMenu}
+                        aria-label="Toggle menu"
+                    >
+                        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
                 </div>
-
-                <div className="hidden lg:block">
-                    <Button variant="filled">
-                        Contact Us
-                    </Button>
-                </div>
-
-                {/* Mobile Menu */}
-                <button 
-                    className={`lg:hidden flex items-center justify-center w-10 h-10 z-50 transition-all duration-300 ${
-                        hasScrolled 
-                            ? 'text-gray-600 hover:text-gray-900' 
-                            : 'text-gray-500 hover:text-gray-700'
-                    }`}
-                    onClick={toggleMenu}
-                    aria-label="Toggle menu"
-                >
-                    {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
             </nav>
 
-            {/* Overlay */}
+            {/* Mobile Menu Overlay */}
             <div className={`
                 fixed inset-0 z-40 lg:hidden transition-all duration-300 ease-in-out
                 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
