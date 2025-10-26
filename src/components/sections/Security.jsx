@@ -19,7 +19,7 @@ const SecuritySection = () => {
   };
 
   return (
-    <section className="py-24 md:py-30 px-4">
+    <section className="py-20 md:py-30 px-4">
       <div className="md:w-10/12 mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-start md:mb-16 mb-6 gap-5">
           <div className="max-w-2xl">

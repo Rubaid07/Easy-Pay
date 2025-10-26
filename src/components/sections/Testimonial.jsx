@@ -13,7 +13,7 @@ const testimonials = [
     text: "Experience a payment app built on simplicity and transparency. No hidden fees, just a seamless user experience that makes every transaction easy and stress-free. Say goodbye to confusion and hello to straightforward payments.",
     name: "Ethan Williams",
     role: "Digital Marketing Specialist",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80"
+    avatar: "https://randomuser.me/api/portraits/men/34.jpg"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
     text: "Discover a payment app focused on simplicity and transparency. Enjoy a seamless experience with no hidden fees, providing clarity and ease in every transaction. It's designed to put you in control of your payments. ",
     name: "Daniel Thompson",
     role: "Product Designer",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&q=80"
+    avatar: "https://randomuser.me/api/portraits/men/71.jpg"
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const testimonials = [
     text: "Experience a payment app built on simplicity and transparency. No hidden fees, just a seamless user experience that makes every transaction easy and stress-free. Say goodbye to confusion and hello to straightforward payments.",
     name: "Sarah Johnson",
     role: "Business Owner",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80"
+    avatar: "https://randomuser.me/api/portraits/men/99.jpg"
   },
 ];
 
@@ -37,7 +37,7 @@ const TestimonialSection = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
 
   return (
-    <section className="w-full py-12 sm:py-16 md:py-24 bg-gray-50  my-30 overflow-hidden">
+    <section className="w-full py-20 sm:py-16 md:py-24 bg-gray-50 md:my-30 my-10 overflow-hidden">
       <div className="md:ml-20 lg:ml-32 xl:ml-46 pl-4 sm:px-6 md:px-0">
         
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">

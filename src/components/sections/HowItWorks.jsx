@@ -27,7 +27,7 @@ const stepsData = [
 
 const HowItWorksSection = () => {
   return (
-    <section className="py-30 md:py-24 px-4 bg-gray-50 mt-10">
+    <section className="py-20 md:py-30 px-4 bg-gray-50 mt-10">
       <div className="md:w-10/12 mx-auto">
         
         {/* Heading Section */}
