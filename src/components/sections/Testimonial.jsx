@@ -58,14 +58,14 @@ const Testimonial = () => {
             <div className="flex gap-3 sm:gap-4">
               <button
                 onClick={() => swiperInstance?.slidePrev()}
-                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors cursor-pointer"
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
               </button>
               <button
                 onClick={() => swiperInstance?.slideNext()}
-                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors"
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors cursor-pointer"
                 aria-label="Next testimonial"
               >
                 <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
