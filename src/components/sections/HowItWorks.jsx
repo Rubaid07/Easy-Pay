@@ -33,10 +33,10 @@ const HowItWorksSection = () => {
         {/* Heading Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8 md:mb-12 gap-4 md:gap-6">
           <div className="max-w-xl">
-            <p className="text-purple-600 font-semibold text-sm uppercase tracking-wider mb-2">
+            <p className="text-purple-600 font-semibold text-sm uppercase tracking-wider mb-1">
               HOW IT WORKS
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl md:text-[40px] font-bold text-gray-900 leading-tight">
               Make payments, transfers, and
               <br className="hidden sm:inline" />
               more in 3 simple steps

@@ -23,10 +23,10 @@ const SecuritySection = () => {
       <div className="md:w-10/12 mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-start md:mb-16 mb-6 gap-5">
           <div className="max-w-2xl">
-            <p className="text-purple-600 font-semibold text-sm uppercase tracking-wider mb-4">
+            <p className="text-purple-600 font-semibold text-sm uppercase tracking-wider mb-1">
               SECURITY
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl md:text-[40px] font-bold text-gray-900 leading-tight">
               We protect your money at <br /> every step with Easy Pay
             </h2>
           </div>

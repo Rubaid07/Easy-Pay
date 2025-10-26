@@ -6,12 +6,14 @@ import PricingSection from "@/components/sections/Pricing";
 import TestimonialSection from "@/components/sections/Testimonial";
 import CTASection from "@/components/sections/Cta";
 import Footer from "@/components/sections/Footer";
+import AppOverviewSection from "@/components/sections/AppOverview";
 
 export default function Home() {
   return (
    <div className="overflow-hidden">
     <Hero />
     <FeaturesSection />
+    <AppOverviewSection />
     <HowItWorksSection />
     <SecuritySection />
     <PricingSection />

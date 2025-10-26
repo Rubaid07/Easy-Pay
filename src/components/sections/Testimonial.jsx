@@ -43,10 +43,10 @@ const TestimonialSection = () => {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* Left Content */}
           <div className="w-full lg:w-5/12 flex flex-col">
-            <p className="text-purple-600 font-bold text-xs sm:text-sm uppercase tracking-widest mb-3 md:mb-4">
+            <p className="text-purple-600 font-bold text-xs sm:text-sm uppercase tracking-widest mb-1">
               TESTIMONIAL
             </p>
-            <h2 className="text-3xl sm:text-4xl md:text-[40px] font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
+            <h2 className="text-3xl md:text-[40px] font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
               We've build trust with<br />
               reviews from real users
             </h2>

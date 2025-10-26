@@ -51,7 +51,7 @@ const PricingSection = () => {
     <section className="w-full px-4 bg-gradient-to-b from-white via-purple-50/30 to-white">
       <div className="md:w-10/12 mx-auto">
         <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <p className="text-purple-600 font-bold text-xs md:text-sm uppercase tracking-widest mb-3 md:mb-4">
+          <p className="text-purple-600 font-bold text-xs md:text-sm uppercase tracking-widest mb-1">
             PRICING
           </p>
           <h2 className="text-3xl md:text-[40px] font-bold text-gray-900 leading-tight max-w-4xl mx-auto">
