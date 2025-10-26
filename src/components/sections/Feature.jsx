@@ -5,25 +5,25 @@ import MarqueeSection from "./Marquee";
 const Features = () => {
   const features = [
     {
-      icon: "/payments.png",
+      icon: "/feature/payments.png",
       title: "Instant payments",
       description: "Send money to friends or family in real-time, for free.",
       bgColor: "bg-blue-50",
     },
     {
-      icon: "/fees.png",
+      icon: "/feature/fees.png",
       title: "No hidden fees",
       description: "Clear and simple pricing. Always be aware of your costs.",
       bgColor: "bg-orange-50",
     },
     {
-      icon: "/wallet.png",
+      icon: "/feature/wallet.png",
       title: "Digital wallet",
       description: "Store money securely and make fast transfers or purchases.",
       bgColor: "bg-blue-50",
     },
     {
-      icon: "/transactions.png",
+      icon: "/feature/transactions.png",
       title: "Secure transactions",
       description: "End-to-end encryption for all transactions.",
       bgColor: "bg-purple-50",
