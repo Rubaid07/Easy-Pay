@@ -16,7 +16,7 @@ const Button = ({
   const variantStyles = {
     filled: 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg focus:ring-blue-500',
     
-    outlined: 'bg-transparent border-2 border-white hover:bg-white/10 text-white focus:ring-white/50',
+    outlined: 'bg-transparent border-2 text-black border-black hover:bg-gray-100 focus:ring-white/50',
   };
 
   const disabledStyles = disabled ? 'opacity-50 cursor-not-allowed' : '';
