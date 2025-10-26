@@ -46,7 +46,7 @@ const pricingPlans = [
   },
 ];
 
-const PricingSection = () => {
+const Pricing = () => {
   return (
     <section className="w-full px-4 bg-gradient-to-b from-white via-purple-50/30 to-white">
       <div className="md:w-10/12 mx-auto">
@@ -181,4 +181,4 @@ const PricingSection = () => {
   );
 };
 
-export default PricingSection;
+export default Pricing;

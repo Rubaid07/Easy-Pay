@@ -33,7 +33,7 @@ const testimonials = [
   },
 ];
 
-const TestimonialSection = () => {
+const Testimonial = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
 
   return (
@@ -152,4 +152,4 @@ const TestimonialSection = () => {
   );
 };
 
-export default TestimonialSection;
+export default Testimonial;

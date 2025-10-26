@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import cta from '../../../public/cta/cta.png';
 import Button from '../ui/Button';
-const CTASection = () => {
+const Cta = () => {
   return (
     <section className="md:px-4 bg-white">
       <div className="md:w-10/12 mx-auto">
@@ -49,4 +49,4 @@ const CTASection = () => {
   );
 };
 
-export default CTASection;
+export default Cta;

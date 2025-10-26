@@ -25,7 +25,7 @@ const stepsData = [
   },
 ];
 
-const HowItWorksSection = () => {
+const HowItWorks = () => {
   return (
     <section className="py-20 md:py-30 px-4 bg-gray-50 mt-10">
       <div className="md:w-10/12 mx-auto">
@@ -109,4 +109,4 @@ const HowItWorksSection = () => {
   );
 };
 
-export default HowItWorksSection;
+export default HowItWorks;

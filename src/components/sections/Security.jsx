@@ -10,7 +10,7 @@ const securityFeatures = [
   { color: "bg-purple-600", title: "24/7 Protection support", description: "Our dedicated team is available around the clock to help you." },
 ];
 
-const SecuritySection = () => {
+const Security = () => {
   const containerStyle = {
     backgroundImage: `url('${bg.src}')`,
     backgroundRepeat: "no-repeat",
@@ -87,4 +87,4 @@ const SecuritySection = () => {
   );
 };
 
-export default SecuritySection;
+export default Security;

@@ -4,7 +4,7 @@ import { CheckCircle } from 'lucide-react';
 import CountUp from "react-countup";
 import Image from 'next/image';
 
-const AppOverviewSection = () => {
+const AppOverview = () => {
     const features = [
         {
             title: "Real-time Balance Tracking",
@@ -106,4 +106,4 @@ const AppOverviewSection = () => {
     );
 };
 
-export default AppOverviewSection;
+export default AppOverview;

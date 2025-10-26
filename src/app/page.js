@@ -1,24 +1,24 @@
-import FeaturesSection from "@/components/sections/Feature";
+import Features from "@/components/sections/Feature";
 import Hero from "../components/sections/Hero";
-import HowItWorksSection from "@/components/sections/HowItWorks";
-import SecuritySection from "@/components/sections/Security";
-import PricingSection from "@/components/sections/Pricing";
-import TestimonialSection from "@/components/sections/Testimonial";
-import CTASection from "@/components/sections/Cta";
+import HowItWorks from "@/components/sections/HowItWorks";
+import Security from "@/components/sections/Security";
+import Pricing from "@/components/sections/Pricing";
+import Testimonial from "@/components/sections/Testimonial";
+import Cta from "@/components/sections/Cta";
 import Footer from "@/components/sections/Footer";
-import AppOverviewSection from "@/components/sections/AppOverview";
+import AppOverview from "@/components/sections/AppOverview";
 
 export default function Home() {
   return (
    <div className="overflow-hidden">
     <Hero />
-    <FeaturesSection />
-    <AppOverviewSection />
-    <HowItWorksSection />
-    <SecuritySection />
-    <PricingSection />
-    <TestimonialSection />
-    <CTASection />
+    <Features />
+    <AppOverview />
+    <HowItWorks />
+    <Security />
+    <Pricing />
+    <Testimonial />
+    <Cta />
     <Footer />
    </div>
   );
