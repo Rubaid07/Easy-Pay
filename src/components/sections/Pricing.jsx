@@ -66,7 +66,9 @@ const PricingSection = () => {
             grid grid-cols-1 
             lg:grid-cols-2 
             xl:grid-cols-3 
-            gap-6 
+            lg:gap-6 
+            lg:space-y-0 
+            space-y-6
             max-w-6xl mx-auto
           "
         >
@@ -143,12 +145,16 @@ const PricingSection = () => {
                 <div className="space-y-4 mb-6 md:mb-8 flex-1">
                   {plan.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-start gap-3">
-                      <Check
-                        className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
+                     <div className={` rounded-full p-1 ${
+                          plan.isDark ? "bg-gray-800" : "bg-blue-100"
+                        }`}>
+                       <Check
+                        className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
                           plan.isDark ? "text-white" : "text-blue-600"
                         }`}
                         strokeWidth={2.5}
                       />
+                     </div>
                       <span
                         className={`text-sm ${
                           plan.isDark ? "text-gray-300" : "text-gray-700"

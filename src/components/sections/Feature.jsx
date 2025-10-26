@@ -32,10 +32,10 @@ const Features = () => {
 
   return (
    <div>
-     <section className="w-full py-16 pb-10 md:pb-16 md:pt-20 lg:pt-24 px-4">
+     <section className="w-full py-16 pb-10 md:pb-0 md:pt-20 lg:pt-24 px-4">
       <div className="md:w-10/12 mx-auto">
-        <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <p className="text-purple-600 font-bold text-xs md:text-sm uppercase tracking-widest mb-3 md:mb-4">
+        <div className="text-center mb-12">
+          <p className="text-purple-600 font-bold text-[16px] md:text-sm uppercase tracking-widest mb-1">
             FEATURES
           </p>
           <h2 className="text-3xl md:text-[40px] font-bold text-gray-900 leading-tight max-w-4xl mx-auto">
